@@ -1,7 +1,0 @@
-parameters:
-    sw_soap_comment.manager.class: Sw\Bundle\SoapCommentBundle\Service\CommentManager
-
-services:
-    sw_soap_comment.manager:
-        class: %sw_soap_comment.manager.class%
-        arguments: [%kernel.root_dir%]

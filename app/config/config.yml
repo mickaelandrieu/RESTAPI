@@ -89,17 +89,6 @@ fos_rest:
 
 nelmio_api_doc: ~
 
-be_simple_soap:
-    services:
-        CommentApi:
-            namespace:     http://localhost/SwimmingPoolParty/ws/comment/1.2/
-            binding:       rpc-literal
-            resource:      "@SwSoapCommentBundle/Controller/DefaultController.php"
-
-# SwSoapCommentBundle
-sw_soap_comment:
-    soap_entry_point: http://localhost/SwimmingPoolParty/web/app.php/ws/CommentApi
-
 #SwRestSwimmingBundle
 sw_rest_swimming:
-    rest_entry_point: http://localhost/SwimmingPoolParty/web/app.php
+    rest_entry_point: http://localhost/RESTAPI/web/app.php
