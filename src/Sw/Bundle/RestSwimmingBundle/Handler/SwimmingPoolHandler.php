@@ -4,7 +4,7 @@ use Sw\Bundle\RestSwimmingBundle\Entity\SwimmingPool;
 
 class SwimmingPoolHandler
 {
-    
+
     public function __construct($om, $entityClass)
     {
         $this->om = $om;
@@ -30,6 +30,7 @@ class SwimmingPoolHandler
     public function post($data)
     {
         $pool = new SwimmingPool();
+        $pool->setId($data["id"]);
         $pool->setName($data["name"]);
         $pool->setAddress($data["address"]);
         $pool->setZipCode($data["zipCode"]);
